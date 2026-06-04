@@ -1,6 +1,5 @@
 services:
   - type: web
-    name: food-order
-    env: java
-    buildCommand: wget -O app.jar https://netpan-wfw55555.oss-cn-shenzhen.aliyuncs.com/vdish/springbootrxe85-0.0.1-SNAPSHOT.jar
-    startCommand: java -jar app.jar
+    name: dish
+    env: docker
+    dockerfilePath: ./Dockerfile
